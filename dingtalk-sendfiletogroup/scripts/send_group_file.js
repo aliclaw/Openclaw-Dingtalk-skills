@@ -1,7 +1,7 @@
 const axios=require('axios');
 const fs=require('fs');
 const FormData=require('form-data');
-const cfg=require('/root/.openclaw/openclaw.json');
+const cfg=require(path.join(os.homedir(), '.openclaw', 'openclaw.json'));
 
 const appKey=cfg.channels.dingtalk.clientId;
 const appSecret=cfg.channels.dingtalk.clientSecret;

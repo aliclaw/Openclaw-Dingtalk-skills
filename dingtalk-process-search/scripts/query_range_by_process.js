@@ -4,7 +4,7 @@
  * Usage: node query_range_by_process.js <process_code> <start_ms> <end_ms>
  */
 
-const cfg=require('/root/.openclaw/openclaw.json');
+const cfg=require(path.join(os.homedir(), '.openclaw', 'openclaw.json'));
 
 (async()=>{
   const appKey=cfg.channels.dingtalk.clientId;

@@ -1,4 +1,4 @@
-const cfg=require('/root/.openclaw/openclaw.json');
+const cfg=require(path.join(os.homedir(), '.openclaw', 'openclaw.json'));
 
 (async()=>{
   const appKey=cfg.channels.dingtalk.clientId;
