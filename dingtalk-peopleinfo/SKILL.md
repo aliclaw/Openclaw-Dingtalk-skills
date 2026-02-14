@@ -18,7 +18,14 @@ description: "DingTalk org structure + people info lookup. Use to read departmen
 - `scripts/list_users_by_dept.js`
 - `scripts/get_user_detail.js`
 - `scripts/org_full_with_people.js`
+- `scripts/list_roles.js` (角色列表/分组)
+- `scripts/list_role_members.js <role_id>` (角色成员)
+
+## Role management (角色管理)
+- 角色列表：`POST /topapi/role/list`
+- 角色成员：`POST /topapi/role/simplelist`
 
 ## Notes
 - Birthday may be empty if not filled in DingTalk profile or hidden by permissions.
 - If birthday is expected, verify permission scope and field name in `topapi/v2/user/get` response.
+- 角色信息来自**组织架构/角色管理**，非智能人事。
